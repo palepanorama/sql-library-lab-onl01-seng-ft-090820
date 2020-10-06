@@ -34,7 +34,6 @@ JOIN books ON books.series_id = series.id
 JOIN character_books ON character_books.book_id = books.id
 JOIN characters ON character_books.character_id = characters.id WHERE characters.species = 'human' GROUP BY series.title ORDER BY COUNT(*) DESC LIMIT 1"
 end
-end
 
 def select_character_names_and_number_of_books_they_are_in
   "Write your SQL query here"
